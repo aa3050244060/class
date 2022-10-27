@@ -1,62 +1,49 @@
 <style>
 #header 
 {
-height:20%;background-image:url("img/1.jpg");background-repeat:no-repeat;padding:1em;background-size:cover;text-align:center;font-family:Times New Roman;;font-size:50px;text-shadow: 2px 2px 5px red;
+height:15%;background-image:url("img/1.jpg");background-repeat:no-repeat;padding:1em;background-size:cover;text-align:center;font-family:Times New Roman;;font-size:35px;text-shadow: 2px 2px 5px red;
 }
 #article 
 {
 height:80%;background-image:url("img/2.jpg");background-repeat:no-repeat;padding:1em;background-size:cover;
 	font-family:Arial
 }
-#footer 
-{
-height:15%;background-image:url("img/3.jpg");background-repeat:no-repeat;padding:1em;background-size:cover;text-align:center;font-style:oblique;font-size:30px;text-shadow: 2px 2px 5px green
-}
+#title {border-style:solid; border-color:rgb(162, 111, 118);}
 #ula {list-style-type:upper-roman;}
 #olb {list-style-type:lower-alpha;}
 ol {background:rgb(185, 163, 226); list-style-type: none;}
 ul {background:rgb(255, 254, 164); list-style-type: none;}
 ol li {background:rgb(223, 209, 243);}
 ul li {background:rgb(255, 254, 207);}
-th, td { width: 150px; text-align: left; border-bottom: 1px solid #ddd;}
+th,td { width: 150px; text-align: left; border-bottom: 1px solid #ddd;}
 tr:hover {background-color:#b3b3cc}
 img 
 {
-max-width:100%;
-height:auto;
-opacity: 0.4;
-display:block;
-margin:auto;
-border-radius: 20px;
-border: 10px solid rgb(234, 160, 181);
+max-width:100%;height:auto;opacity: 0.4;display:block;margin:auto;border-radius: 20px;border: 10px solid rgb(234, 160, 181);
 }
-img:hover
-{
-opacity: 1;
-}
+img:hover{opacity: 1;}
 h1{text-transform:capitalize;}
+p {text-indent:50px;font-size:25px}
+p1 {text-indent:50px;font-size:25px}
+p {border-left: 6px solid rgb(255, 119, 122); background-color: lightgrey;}
 p {text-indent:50px;font-size:25px}
 a:link {color:rgb(255, 133, 255);text-decoration:none;}
 a:visited {color:rgb(255, 133, 0);text-decoration:none;}
 a:hover {color:rgb(255, 0, 0);text-decoration:none;}
 a:active {color:rgb(255, 133, 133);text-decoration:none;}
-
 </style>
 <body>
 <div id="header">
-<h1>Header</h1>
+<h1 id="title">Header</h1>
 </div>
 <div id="article">
 	<p>This text is styled with some of the text formatting properties. The text-indent property is used to specify the indentation of the first line of a text.</p>
-	<p><a href="http://www.google.com" target="_blank">Link to Google</a></p>
+	<p1><a href="http://www.google.com" target="_blank">Link to Google</a></p1>
 	<ul id="ula"><li>Coffee</li><li>Tea</li><li>Coca Cola</li></ul>
 	<ol id="olb"><li>Coffee</li><li>Tea</li><li>Coca Cola</li></ol>
 	<table><tr><th>Firstname</th><th>Lastname</th></tr>
 	<tr><td>Peter</td><td>Griffin</td></tr>
 	<tr><td>Joe</td><td>Swanson</td></tr></table>
 	<img src="img/cat.jpg">
-</div>
-<div id="footer">
-<h1>Footer</h1>
 </div>
 </body>
