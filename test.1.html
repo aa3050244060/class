@@ -4,7 +4,7 @@
 <form>
 Please input your name: <input type="text" id="name">
 </form>
-<button type="button" onclick="myFunc()">Click Me!</button>
+<button type="button" onclick="myFunc()">Click!</button>
 <button type="button" onclick="myFunc1()">Clear!</button>
 <br>
 <br>
@@ -17,11 +17,11 @@ Please input your name: <input type="text" id="name">
 Please input your number1: <input type="text" id="n1">
 Please input your number2: <input type="text" id="n2">
 </form>
-<p id="Mix"></p>
-<p id="Mixx"></p>
+<p id="Cal"></p>
+<p id="Call"></p>
 <br>
-<button type="button" onclick="mix1()">mix</button>
-<button type="button" onclick="clear1()">Clear!</button>
+<button type="button" onclick="cal()">Cal</button>
+<button type="button" onclick="clear1()">Clear</button>
 <script>
 function myFunc()
 {
@@ -45,29 +45,29 @@ function back()
 document.getElementById("content").innerHTML="Change content by clicking buttons";
 }
 
-function mix1()
+function cal()
 {
 let x=document.getElementById("n1").value;
 let y=document.getElementById("n2").value;
-console.log(typeof(x));
-console.log(typeof(y));
+/*console.log(typeof(x));
+console.log(typeof(y));*/
 x=Number(x);
 y=Number(y);
-console.log(typeof(x));
-console.log(typeof(y));
+/*console.log(typeof(x));
+console.log(typeof(y));*/
 let z=x+y;
-console.log(z);
+/*console.log(z);*/
 let u=x-y;
-console.log(u);
-document.getElementById("Mix").innerHTML=("number1+number2="+z);
-document.getElementById("Mixx").innerHTML=("number1-number2="+u);
+/*console.log(u);*/
+document.getElementById("Cal").innerHTML=("number1 + number2="+z);
+document.getElementById("Call").innerHTML=("number1 - number2="+u);
 }
 function clear1()
 {
 document.getElementById("n1").value="";
 document.getElementById("n2").value="";
-document.getElementById("Mix").innerHTML="";
-document.getElementById("Mixx").innerHTML="";
+document.getElementById("Cal").innerHTML="";
+document.getElementById("Call").innerHTML="";
 }
 
 </script>
